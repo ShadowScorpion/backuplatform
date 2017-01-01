@@ -3,6 +3,8 @@ import sys
 import argparse
 import yaml
 from logginsys import LogginSystem as loggin_system
+from os import listdir
+from os.path import isfile, join
 
 class enable_modules(object):
     def __init__(self, main_conf_data):
@@ -55,6 +57,35 @@ class enable_modules(object):
 
         return logs, log_level, server_id, include
 
+    def define_inventory(self, include_folder, log_system, inventory_errors = 0, inventory_data = []):
+        inventory_files = [f for f in listdir(include_folder) if isfile(join(include_folder, f))]
+        for inventory_file in inventory_files:
+            try:
+                inventory_yaml = yaml.safe_load(open(include_folder+"/"+inventory_file))
+                inventory_data.append(inventory_yaml)
+
+                for inventories in inventory_yaml:
+                    if str(inventories) == 'folder' or str(inventories) == 'file':
+                        log_system.write_log("%s %s is added to inventory list" % (inventories, inventory_yaml[inventories]['path']),
+                                             'INFO')
+                    elif str(inventories) == 'database':
+                        log_system.write_log(
+                            "%s %s is added to inventory list" % (inventories, inventory_yaml[inventories]['database']),
+                            'INFO')
+
+            except Exception as e:
+                inventory_errors += 1
+                log_system.write_log("Problem in line "+str(e), 'ERROR')
+        if inventory_errors != 0:
+            sys.exit(1)
+        else:
+            return inventory_data
+
+
+class forming_request(object):
+    def __init__(self):
+        pass
+
 if __name__ == '__main__':
     parser = argparse.ArgumentParser(description='Reading of arguments of backupplatform agent')
     parser.add_argument('-c', dest='config_file', default='/etc/backuplatform/backuplatform.conf')
@@ -70,8 +101,9 @@ if __name__ == '__main__':
         dataMap = yaml.safe_load(f)
         class_modules = enable_modules(dataMap)
         option_logs, option_log_level, option_server_id, option_include = class_modules.main_conf()
-        log_system = loggin_system(option_logs)
+        log_system = loggin_system(option_logs, option_log_level)
         log_system.running_agent(args.config_file)
+        inventory = class_modules.define_inventory(option_include, log_system)
 
     except Exception as e:
         print("Problems with configuration file")

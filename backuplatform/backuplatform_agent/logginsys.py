@@ -3,10 +3,11 @@ import datetime
 
 class LogginSystem(object):
 
-    def __init__(self, logs_folder):
+    def __init__(self, logs_folder, global_log_level):
         log_file_path = logs_folder+"backuplatform.log"
         exist_folder = os.path.isdir(logs_folder)
         exist_file = os.path.exists(log_file_path)
+        self.global_log_level = global_log_level
         if exist_folder == False:
             print("No folder for logs. Trying to create it")
             try:
@@ -27,3 +28,8 @@ class LogginSystem(object):
         with open(self.log_file, 'a') as log_file_temp:
             log_file_temp.write("%s [INFO] Starting backuplatform agent \n" % str(datetime.datetime.now().strftime("%Y-%m-%d %H:%M")))
             log_file_temp.write("%s [INFO] Main configuration file is %s \n" % (str(datetime.datetime.now().strftime("%Y-%m-%d %H:%M")), configuration_file))
+            log_file_temp.write("%s [INFO] Start reading inventofies configuration files \n" % str(datetime.datetime.now().strftime("%Y-%m-%d %H:%M")))
+
+    def write_log(self, message, log_level_message):
+        with open(self.log_file, 'a+') as log_file:
+            log_file.write("%s [%s] %s \n" % (str(datetime.datetime.now().strftime("%Y-%m-%d %H:%M")), log_level_message, message))

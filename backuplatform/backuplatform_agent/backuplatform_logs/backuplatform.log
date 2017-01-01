@@ -1,5 +1,6 @@
-2016-12-17 19:21 [INFO] New logs file for backuplatform agent was created.
-2016-12-17 19:21 [INFO] Starting backuplatform agent 
-2016-12-17 19:21 [INFO] Main configuration file is ./configs/backuplatform.conf 
-2016-12-17 19:21 [INFO] Starting backuplatform agent 
-2016-12-17 19:21 [INFO] Main configuration file is ./configs/backuplatform.conf 
+2017-01-01 15:22 [INFO] Starting backuplatform agent 
+2017-01-01 15:22 [INFO] Main configuration file is ./configs/backuplatform.conf 
+2017-01-01 15:22 [INFO] Start reading inventofies configuration files 
+2017-01-01 15:22 [INFO] database test is added to inventory list 
+2017-01-01 15:22 [INFO] file /var/test/test is added to inventory list 
+2017-01-01 15:22 [INFO] folder /var/test/test_folder is added to inventory list 
