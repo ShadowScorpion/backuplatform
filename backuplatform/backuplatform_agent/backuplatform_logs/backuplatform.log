@@ -4,3 +4,15 @@
 2017-01-01 15:22 [INFO] database test is added to inventory list 
 2017-01-01 15:22 [INFO] file /var/test/test is added to inventory list 
 2017-01-01 15:22 [INFO] folder /var/test/test_folder is added to inventory list 
+2017-01-01 15:30 [INFO] Starting backuplatform agent 
+2017-01-01 15:30 [INFO] Main configuration file is ./configs/backuplatform.conf 
+2017-01-01 15:30 [INFO] Start reading inventofies configuration files 
+2017-01-01 15:30 [INFO] database test is added to inventory list 
+2017-01-01 15:30 [INFO] file /var/test/test is added to inventory list 
+2017-01-01 15:30 [INFO] folder /var/test/test_folder is added to inventory list 
+2017-01-01 15:30 [INFO] Starting backuplatform agent 
+2017-01-01 15:30 [INFO] Main configuration file is ./configs/backuplatform.conf 
+2017-01-01 15:30 [INFO] Start reading inventofies configuration files 
+2017-01-01 15:30 [INFO] database test is added to inventory list 
+2017-01-01 15:30 [INFO] file /var/test/test is added to inventory list 
+2017-01-01 15:30 [INFO] folder /var/test/test_folder is added to inventory list 

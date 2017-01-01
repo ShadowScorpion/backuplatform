@@ -58,7 +58,7 @@ class enable_modules(object):
         return logs, log_level, server_id, include
 
     def define_inventory(self, include_folder, log_system, inventory_errors = 0, inventory_data = []):
-        inventory_files = [f for f in listdir(include_folder) if isfile(join(include_folder, f))]
+        inventory_files = [f for f in listdir(include_folder) if (isfile(join(include_folder, f)) and ".conf" in join(include_folder, f)) ]
         for inventory_file in inventory_files:
             try:
                 inventory_yaml = yaml.safe_load(open(include_folder+"/"+inventory_file))
