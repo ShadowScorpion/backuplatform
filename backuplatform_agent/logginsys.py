@@ -30,5 +30,6 @@ class LogginSystem(object):
             log_file_temp.write("%s [INFO] Main configuration file is %s \n" % (str(datetime.datetime.now().strftime("%Y-%m-%d %H:%M")), configuration_file))
             log_file_temp.write("%s [INFO] Start reading inventofies configuration files \n" % str(datetime.datetime.now().strftime("%Y-%m-%d %H:%M")))
 
-#    def write_log(self, message, log_level_message):
-#        with open(self.log_file, 'a') as log_file:
+    def write_log(self, message, log_level_message):
+        with open(self.log_file, 'a+') as log_file:
+            log_file.write("%s [%s] %s \n" % (str(datetime.datetime.now().strftime("%Y-%m-%d %H:%M")), log_level_message, message))

@@ -1,45 +1,18 @@
-2017-01-01 13:07 [INFO] Starting backuplatform agent 
-2017-01-01 13:07 [INFO] Main configuration file is ./configs/backuplatform.conf 
-2017-01-01 13:07 [INFO] Start reading inventofies configuration files 
-2017-01-01 14:29 [INFO] Starting backuplatform agent 
-2017-01-01 14:29 [INFO] Main configuration file is ./configs/backuplatform.conf 
-2017-01-01 14:29 [INFO] Start reading inventofies configuration files 
-2017-01-01 14:31 [INFO] Starting backuplatform agent 
-2017-01-01 14:31 [INFO] Main configuration file is ./configs/backuplatform.conf 
-2017-01-01 14:31 [INFO] Start reading inventofies configuration files 
-2017-01-01 14:31 [INFO] Starting backuplatform agent 
-2017-01-01 14:31 [INFO] Main configuration file is ./configs/backuplatform.conf 
-2017-01-01 14:31 [INFO] Start reading inventofies configuration files 
-2017-01-01 14:31 [INFO] Starting backuplatform agent 
-2017-01-01 14:31 [INFO] Main configuration file is ./configs/backuplatform.conf 
-2017-01-01 14:31 [INFO] Start reading inventofies configuration files 
-2017-01-01 14:32 [INFO] Starting backuplatform agent 
-2017-01-01 14:32 [INFO] Main configuration file is ./configs/backuplatform.conf 
-2017-01-01 14:32 [INFO] Start reading inventofies configuration files 
-2017-01-01 14:37 [INFO] Starting backuplatform agent 
-2017-01-01 14:37 [INFO] Main configuration file is ./configs/backuplatform.conf 
-2017-01-01 14:37 [INFO] Start reading inventofies configuration files 
-2017-01-01 14:38 [INFO] Starting backuplatform agent 
-2017-01-01 14:38 [INFO] Main configuration file is ./configs/backuplatform.conf 
-2017-01-01 14:38 [INFO] Start reading inventofies configuration files 
-2017-01-01 14:38 [INFO] Starting backuplatform agent 
-2017-01-01 14:38 [INFO] Main configuration file is ./configs/backuplatform.conf 
-2017-01-01 14:38 [INFO] Start reading inventofies configuration files 
-2017-01-01 14:38 [INFO] Starting backuplatform agent 
-2017-01-01 14:38 [INFO] Main configuration file is ./configs/backuplatform.conf 
-2017-01-01 14:38 [INFO] Start reading inventofies configuration files 
-2017-01-01 14:38 [INFO] Starting backuplatform agent 
-2017-01-01 14:38 [INFO] Main configuration file is ./configs/backuplatform.conf 
-2017-01-01 14:38 [INFO] Start reading inventofies configuration files 
-2017-01-01 14:38 [INFO] Starting backuplatform agent 
-2017-01-01 14:38 [INFO] Main configuration file is ./configs/backuplatform.conf 
-2017-01-01 14:38 [INFO] Start reading inventofies configuration files 
-2017-01-01 14:39 [INFO] Starting backuplatform agent 
-2017-01-01 14:39 [INFO] Main configuration file is ./configs/backuplatform.conf 
-2017-01-01 14:39 [INFO] Start reading inventofies configuration files 
-2017-01-01 14:39 [INFO] Starting backuplatform agent 
-2017-01-01 14:39 [INFO] Main configuration file is ./configs/backuplatform.conf 
-2017-01-01 14:39 [INFO] Start reading inventofies configuration files 
-2017-01-01 14:40 [INFO] Starting backuplatform agent 
-2017-01-01 14:40 [INFO] Main configuration file is ./configs/backuplatform.conf 
-2017-01-01 14:40 [INFO] Start reading inventofies configuration files 
+2017-01-01 15:22 [INFO] Starting backuplatform agent 
+2017-01-01 15:22 [INFO] Main configuration file is ./configs/backuplatform.conf 
+2017-01-01 15:22 [INFO] Start reading inventofies configuration files 
+2017-01-01 15:22 [INFO] database test is added to inventory list 
+2017-01-01 15:22 [INFO] file /var/test/test is added to inventory list 
+2017-01-01 15:22 [INFO] folder /var/test/test_folder is added to inventory list 
+2017-01-01 15:30 [INFO] Starting backuplatform agent 
+2017-01-01 15:30 [INFO] Main configuration file is ./configs/backuplatform.conf 
+2017-01-01 15:30 [INFO] Start reading inventofies configuration files 
+2017-01-01 15:30 [INFO] database test is added to inventory list 
+2017-01-01 15:30 [INFO] file /var/test/test is added to inventory list 
+2017-01-01 15:30 [INFO] folder /var/test/test_folder is added to inventory list 
+2017-01-01 15:30 [INFO] Starting backuplatform agent 
+2017-01-01 15:30 [INFO] Main configuration file is ./configs/backuplatform.conf 
+2017-01-01 15:30 [INFO] Start reading inventofies configuration files 
+2017-01-01 15:30 [INFO] database test is added to inventory list 
+2017-01-01 15:30 [INFO] file /var/test/test is added to inventory list 
+2017-01-01 15:30 [INFO] folder /var/test/test_folder is added to inventory list 
