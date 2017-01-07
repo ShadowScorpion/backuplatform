@@ -23,5 +23,5 @@ admin.autodiscover()
 
 urlpatterns = [
     url(r'^admin/', admin.site.urls),
-#    url(r'^inventory/', include('inventory.urls')),
+    url(r'^inventory/', include('inventory.urls')),
 ]
